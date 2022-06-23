@@ -1,0 +1,290 @@
+body {
+  background: linear-gradient(to right, #d7eaff, #00d4ff);
+  margin: 0;
+}
+
+body .header {
+  height: 10%;
+  background-color: #6495ed;
+}
+
+body .header div {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 11px 11px 11px 6px;
+  display: flex;
+}
+
+body .header div img {
+  width: 10%;
+}
+
+body .header div .submit {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 36% auto auto;
+  display: flex;
+}
+
+body .header div .submit .town {
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+body .header div .submit .button-town {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+body .header div .submit .button-town:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+body .header div .submit .button-town:active {
+  background-color: gray;
+  transform: translateY(4px);
+  box-shadow: 0 5px #666;
+}
+
+body main {
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body #meteo-curr {
+  width: 50%;
+  background-color: #87ceeb;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+body #meteo-curr .error {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+
+body #meteo-curr .cityName {
+  width: 100%;
+  border: none;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+body #meteo-curr .cityName h2 {
+  color: #fff;
+  background-color: #6495ed;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+body #meteo-curr .cityTemp {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 10px 16px;
+  display: flex;
+}
+
+body #meteo-curr .cityTemp .icon {
+  text-align: right;
+}
+
+body #meteo-curr .cityTemp .icon img {
+  width: 70px;
+}
+
+body #meteo-curr .cityTemp .temps {
+  text-align: left;
+  border: none;
+}
+
+body #meteo-curr .cityTemp .temps p {
+  color: #fff;
+  margin: 0;
+  font-size: 32px;
+}
+
+body #meteo-jour {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+body #meteo-jour .error {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+
+body #meteo-jour ul {
+  margin: 0;
+  padding: 0;
+}
+
+body #meteo-jour ul li {
+  list-style: none;
+}
+
+body #meteo-jour ul .location {
+  padding: 16px;
+}
+
+body #meteo-jour ul .Tressenti {
+  flex-direction: column;
+  margin: 0 16px;
+  display: flex;
+}
+
+body #meteo-jour ul .Tressenti .Tressenti-temp {
+  font-size: 32px;
+}
+
+body #meteo-jour ul .Tressenti .Tressenti-index {
+  font-size: 12px;
+}
+
+body #meteo-jour ul .meteo {
+  border-top: 1px solid #dedede;
+  padding: 10px 16px;
+}
+
+body #meteo-week {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+body #meteo-week .meteo-week {
+  padding: 16px;
+}
+
+body #meteo-week .error {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+
+body #meteo-week .prevision-quotidienne ul {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+body #meteo-week .prevision-quotidienne ul li {
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-image: linear-gradient(#dedede00 0, #dedede 25% 70%, #dedede00 85%, #dedede00) 1 100%;
+  flex-direction: column;
+  flex-basis: 20%;
+  align-items: center;
+  padding: 0 5px;
+  list-style: none;
+  display: flex;
+}
+
+body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-ajd-min, body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-demain-min, body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-apdem-min, body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-3jours-min, body #meteo-week .prevision-quotidienne ul li .prevision-quotidienne-4jours-min {
+  font-size: 12px;
+}
+
+body #meteo-comparaison {
+  width: 50%;
+  border-radius: 15px;
+  margin: 30px auto;
+}
+
+body #meteo-comparaison .submit2 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+
+body #meteo-comparaison .submit2 .town {
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.5em;
+}
+
+body #meteo-comparaison .submit2 .button-town2 {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+body #meteo-comparaison .submit2 .button-town2:hover {
+  color: #fff;
+  background-color: gray;
+}
+
+body #meteo-comparaison .submit2 .button-town2:active {
+  background-color: gray;
+  transform: translateY(4px);
+  box-shadow: 0 5px #666;
+}
+
+body #meteo-comparaison .town {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  margin: 0 auto 10px;
+  font-size: 1.5em;
+}
+
+body #meteo-comparaison .comparaison {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  display: flex;
+}
+
+body #meteo-comparaison .comparaison #table-city1 table {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+
+body #meteo-comparaison .comparaison #table-city1 table h4 {
+  text-align: center;
+  margin: 0 auto 10px;
+  text-decoration: underline;
+}
+
+body #meteo-comparaison .comparaison #table-city2 table {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+
+body #meteo-comparaison .comparaison #table-city2 table h4 {
+  text-align: center;
+  margin: 0 auto 10px;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
